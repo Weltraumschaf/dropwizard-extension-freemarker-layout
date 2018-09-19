@@ -46,7 +46,7 @@ public final class FreemarkerLayoutViewRendererIntegrationTest extends JerseyTes
     void stopTestContainer() throws Exception {
         super.tearDown();
     }
-    
+
     private Application configure(Object... resources) {
         final ResourceConfig config = new ResourceConfig();
         final ViewRenderer renderer = new FreemarkerLayoutViewRenderer();

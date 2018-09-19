@@ -39,7 +39,7 @@ import io.dropwizard.views.View;
  * <p>Hello, World!</p>
  * }</pre>
  */
-public final class LayoutView extends View {
+public class LayoutView extends View {
     private final View contentView;
     private String content = "";
 
@@ -62,7 +62,7 @@ public final class LayoutView extends View {
      *
      * @return never {@code null}, maybe empty
      */
-    public String getContent() {
+    public final String getContent() {
         return content;
     }
 
@@ -74,7 +74,7 @@ public final class LayoutView extends View {
      *
      * @param content not {@code null}
      */
-    public void setContent(final String content) {
+    public final void setContent(final String content) {
         this.content = Validate.notNull(content, "content");
     }
 
@@ -83,7 +83,7 @@ public final class LayoutView extends View {
      *
      * @return never {@code null}
      */
-    public View getContentView() {
+    public final View getContentView() {
         return contentView;
     }
 }
